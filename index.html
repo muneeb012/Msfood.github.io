@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fast Food Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97e9dcf34a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+      </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <header>
+        <div class="bg">
+            <img class="img-fluid" src="imgs/Baner2.png" alt="">
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <h4>M.S Food</h4>
+            </div>
+            <div  class="menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BOOK TABLE</a></li>
+                </ul>
+            </div>
+            <div class="order">
+                <ul>
+                    <li ><a href=""><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><button
+                                style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Order
+                                Online</button></a></li>
+                </ul>
+            </div>
+            
+            <div style="display: none;" id="exit" class="rnav">
+             <ul id="mnav">
+                 <li><a href="">HOME</a></li>
+                 <li><a href="">MENU</a></li>
+                 <li><a href="">ABOUT</a></li>
+                 <li><a href="">BOOK TABLE</a></li>
+             </ul>
+            </div>
+            <div class="rmenu">
+                <div onclick="responsive()" class="btns">
+                 <h2 id="bar"><i class="fa-solid fa-bars"></i></h2>
+                </div>
+             </div>
+        <div class="display">
+            <h2>Fast Food Restaurant</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti eum quo soluta fugit veritatis,
+                culpa ipsum neque aperiam reprehenderit corporis asperiores magni voluptas sint accusantium dolor sunt
+                sapiente vero.</p>
+            <br>
+            <a href=""><button
+                    style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Order
+                    Online</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="special">
+            <div class="bx1">
+                <div class="img">
+                    <img src="imgs/burger.png" alt="">
+                </div>
+                <div class="tex">
+                    <h5>Tasty Thursday</h5>
+                    <h4>20% off</h4>
+                    <br>
+                    <a href=""><button
+                            style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Order
+                            Now</button></a>
+                </div>
+            </div>
+            <div class="bx2">
+                <div class="img">
+                    <img src="imgs/pizza.png" alt="">
+                </div>
+                <div class="tex">
+                    <h5>Tasty Thursday</h5>
+                    <h4>20% off</h4>
+                    <br>
+                    <a href=""><button
+                            style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Order
+                            Now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="ourmenu">
+            <h3>Our Menu</h3>
+            <div class="list">
+                <ul>
+                    <li id="v1" onclick="show()">All</li>
+                    <li id="v2" onclick="burger()">Burger</li>
+                    <li id="v3" onclick="pizza()">Pizza</li>
+                    <li id="v4" onclick="passta()">Pasta</li>
+                    <li id="v5" onclick="fries()">Fries</li>
+                </ul>
+            </div>
+        </div>
+        <div class="items">
+        <div id="burg" class="burgers">
+            <ul>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/01.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Delicious Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/03.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Tasty Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Burger 2 -->
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/b2.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Patty Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/b3.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Beef Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/b4.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Chicken Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/burgers/b5.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Vegitable Burger</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- pizza -->
+        <div id="pizz" class="pizza">
+            <ul>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/Pizzas/p1.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Delicious Pizza</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/Pizzas/p3.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Delicious Pizza</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Burger 2 -->
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/Pizzas/farm house.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Farm House Pizza</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div id="pass" class="pasta">
+            <ul>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/pasta/p1.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Delicious Pasta</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/pasta/p2.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Delicious Pizza</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Fries -->
+        <div id="fri" class="fries">
+            <ul>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/fries/c1.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Chilli Chips</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itme1">
+                        <div class="bimg">
+                            <img src="imgs/fries/c2.png" alt="">
+                        </div>
+                        <div class="btitle">
+                            <h4>Bacon Chips</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias. Voluptate
+                                optio
+                                accusantium veniam, laboriosam facilis inventore. Corrupti, nisi. Eos, repellat. Ea
+                                nulla
+                                quaerat culpa architecto repellat totam consequatur suscipit.</p>
+                            <div class="price">
+                                <div class="value">
+                                    <p>$15</p>
+                                </div>
+                                <div class="cart">
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="weare">
+            <div class="about">
+                <img class="img-fluid" src="imgs/about-img.png" alt="">
+            </div>
+            <div class="atext">
+                <h2>We are M.S Foods</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, impedit nostrum voluptatibus minima
+                    libero adipisci ratione. Illum, in minus aperiam fuga quam impedit est, maiores ratione obcaecati
+                    unde aspernatur facilis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                    mollitia error? At ipsam hic eos itaque natus! Rerum est iste, totam sunt in doloremque et tempora
+                    placeat nam optio porro.</p>
+                <br>
+                <a href=""><button
+                        style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Read
+                        More</button></a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="form">
+                <h3> Book a table</h3>
+                <form action="">
+                    <input required type="text" placeholder="Your Name">
+                    <br>
+                    <br>
+                    <input type="tel" placeholder="Phone Number">
+                    <br>
+                    <br>
+                    <input type="email" placeholder="Your Email">
+                    <br>
+                    <br>
+                    <select name="" id="">
+                        <option style="background-color: aqua;" value="how many">How many Persons</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="date">
+                    <br>
+                    <br>
+                    <button type="submit"
+                        style="background-color: yellow; border-radius: 40px; height: 40px; width: 160px; border: none;">Book
+                        Now</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.636794725302!2d74.4266339746906!3d31.56158098809255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f0c8d4304bf%3A0xc73b101827748d63!2sQurashi%20Photo%20Studio!5e0!3m2!1sen!2s!4v1692207406566!5m2!1sen!2s"
+                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="fmain">
+        <div class="contact">
+            <h3> Contact US</h3>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-location-dot"></i> location</a></li>
+                <li><a href=""><i class="fa-solid fa-phone"></i> Call +923234673347</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>muhmadmuneeb13@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="fabout">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic ipsam necessitatibus id ratione
+                iure modi quasi ullam sequi sunt tempora nulla reiciendis temporibus, quos architecto nostrum mollitia
+                nesciunt ipsa.</p>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+        </div>
+        <div class="opening">
+<h3>Opening Hours</h3>
+<p>Every Day</p>
+
+<p>9:00AM To 9:00PM</p>
+        </div>
+        </div>
+        <div class="bottom">
+            <p>This Website Created by MuneebSadiqiue &copy;2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+
+    
+}
+.bg img{
+    width: 100%;
+}
+.rmenu{
+    display: none;
+}
+.bg{
+    width: 100%;
+}
+.logo h4{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.bg{
+    position: absolute;
+    z-index: 0;
+}
+.nav{
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 20px;
+}
+.order ul li{
+    display: inline-block;
+    margin: 10px
+}
+.logo{
+    padding-left: 10%;
+}
+.menu{
+position: relative;
+left: 3%;
+}
+.order ul li a button:hover{
+opacity: 0.9;
+transition: 0.5s;
+}
+.order{
+    padding-right: 10%;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: orange;
+}
+.order ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.display{
+    position: relative;
+    color: white;
+    /* background-color: red; */
+    width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.display h2{
+    font-family: 'Kaushan Script', cursive;
+}
+main{
+    margin-top: 15%;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.special{
+    /* background-color:black ; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+padding-right: 10%;
+
+}
+.bx1 {
+background-color: #222831;
+color: white;
+display: flex;
+align-items: center;
+width: 600px;
+height: 180px;
+border-radius: 10px;
+margin-left: 5%;
+font-family: 'Kaushan Script', cursive;
+}
+.bx1 img{
+    width: 250px;
+
+
+}
+
+
+.bx1 img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+.bx2 {
+    background-color:#222831;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 180px;
+   margin-left: 10%;
+   border-radius: 10px;
+   font-family: 'Kaushan Script', cursive;
+    }
+    .bx2 img{
+        width: 250px;
+    
+    }
+    
+    
+    .bx2 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    }
+    button:hover{
+        opacity: 0.9;
+        transition: 0.5s;
+    }
+    .ourmenu{
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
+    .ourmenu h3{
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+    }
+    .list ul li{
+        display: inline-flex;
+        margin: 20px;
+        cursor: pointer;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 30px;
+    }
+
+    .list{
+        text-align: center;
+
+    }
+    .bimg img{
+        width: 160px;
+        height: 160px;
+        
+    }
+    .bimg img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .btitle{
+        background-color: #222831;
+        color: white;
+        width: 400px;
+        padding: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .bimg{
+        width: 400px;
+        background-color: #F1F2F3;
+        text-align: center;
+        padding: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .burgers ul li{
+
+     display: inline-block;
+     margin-left: auto;
+     margin-right: auto;
+     margin: 10px;
+     animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    @keyframes myAnim {
+        0% {
+            transform: scale(0);
+            transform-origin: 100% 50%;
+        }
+    
+        100% {
+            transform: scale(1);
+            transform-origin: 100% 50%;
+        }
+    }
+    .price button{
+background-color: rgb(255, 174, 0);
+width: 40px;
+height: 40px;
+border-radius: 100%;
+border: none;
+color: white;
+    }
+    .price .value{
+        font-weight: bold;
+    }
+    .pizza ul li{
+        display: inline-block;
+        margin: 10px;
+        animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    @keyframes myAnim {
+        0% {
+            transform: scale(0);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+    .pizza{
+        display: none;
+    }
+    .pasta ul li {
+        display: inline-block;
+        margin: 10px;
+        animation: mypasta 1s ease 0s 1 normal forwards;
+    }
+    @keyframes mypasta {
+        0% {
+            transform: rotate(0);
+            transform-origin: left;
+        }
+    
+        100% {
+            transform: rotate(360deg);
+            transform-origin: left;
+        }
+    }
+.fries {
+    display:none;
+}
+.pasta{
+    display: none;
+}
+.fries ul li{
+    display: inline-block;
+    margin: 10px;
+    animation: myfries 1s ease 0s 1 normal forwards;
+}
+@keyframes myfries {
+	0% {
+		transform: scaleY(0.4);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
+.special{
+    animation: mys 1s ease 0s 1 normal forwards;
+}
+@keyframes mys {
+	0% {
+		transform: scale(0.5);
+		transform-origin: 100% 50%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 100% 50%;
+	}
+}
+.weare{
+    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    /* display: none; */
+
+}
+.about img{
+    width: 400px;
+}
+
+.atext{
+    /* background-color: aqua; */
+    width: 600px;
+    margin-left: 10%;
+}
+.items{
+    width: 100%;
+}
+.form form input{
+    width: 500px;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.form form select{
+    width: 500px;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.form form select:focus{
+  outline: none;
+}
+.form form input:focus{
+    outline: none;
+
+  }
+.book{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+   padding: 20px;
+    /* background-color: aqua;    */
+}
+.book h3{
+    font-family: 'Kaushan Script', cursive;
+}
+.form{
+   margin-left: 5%;
+   /* background-color: red; */
+   width: 500px;
+}
+.map{
+    margin-right: 8%;
+margin-top: 2%;
+}
+
+.map iframe{
+    border-radius: 30px;
+    /* display: none; */
+}
+.fmain{
+    width: 100%;
+    background-color: #222831;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 60px;
+    padding-right: 10%;
+
+}
+.fmain h3{
+    font-family: 'Kaushan Script', cursive;
+}
+footer{
+    width: 100%;
+    background-color: #222831;
+    text-align: center;
+}
+.bottom{
+    padding: 10px;
+    color: white;
+}
+.fabout{
+    width: 400px;
+}
+.fabout ul li{
+    display: inline-flex;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+justify-content: center;
+align-items: center;
+margin: 5px;
+    background-color: white;
+}
+.contact ul li{
+    display: block;
+    margin: 10px;
+}
+.contact ul li a{
+    color: white;
+    text-decoration: none;
+}
+.fabout ul li a {
+    color: black;
+}
+.fabout ul li a:hover{
+    color: rgb(255, 136, 0);
+    transition: 0.5s;
+}
+.atext h2{
+    font-family: 'Kaushan Script', cursive;
+}
+.rmenu{
+    display: none;
+}
+.rnav{
+    display: none;
+}
+.rnav ul li a{
+    text-decoration: none;
+    color: white;
+   
+}
+.rnav ul li {
+    text-decoration: none;
+    color: white;
+   list-style: none;
+   margin: 5px;
+   animation: myrnav 1s ease 0s 1 normal forwards;
+}
+@keyframes myrnav {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(100px);
+	}
+}
+
+@media screen and (max-width:1309px) {
+
+    .display{
+        display: none;
+    }
+
+      .ourmenu{
+        width: 600px;
+      }
+      .special{
+        display: flex;
+        justify-content: center;
+      }
+
+      .map {
+        text-align: center;
+        width: 600px;
+      }
+      .rmenu{
+        display: inline;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .order{
+        display: none;
+    }
+      
+    .book{
+
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 628px;
+    }
+    .form{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .fmain{
+        display: flex;
+        flex-direction: column;
+width: 628px;
+    }
+
+  
+    .fabout{
+        text-align: center;
+     width: 500px;
+    
+    }
+   footer{
+    width: 628px;
+   }
+   .menu{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 1085px){
+    .menu{
+        display: none;
+    }
+.special{
+    margin-top: 40%;
+}  
+}
+@media only screen and (max-width: 994px){
+    
+    .items{
+        text-align: center;
+        width: 600px;
+    }
+}
+
+
+@media only screen and (max-width:846px){
+    .display{
+        position: relative;
+        bottom: 40px;
+    }
+    .map iframe{
+        width: 400px;
+        height: 300px;
+    }
+    .special{
+        display: flex;
+        flex-direction: column;
+   justify-content: center;
+width: 600px;
+padding-left: 18%;
+    }
+    .bx1{
+      margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 5%;
+      width: 450px;
+      
+    }
+    .bx2{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+}
+@media only screen and (max-width:682px){
+  .weare{
+    display: none;
+
+  }
+  .bimg{
+    width: 300px;
+}
+.btitle{
+    width: 300px;
+}
+  .bg{
+width: 628px;
+  }
+  .weare img{
+    display: none;
+    width: 100%;
+  }
+  .special{
+    margin-top: 60%;
+  }
+
+  .display{
+display: none;
+  }
+  .order{
+    display: none;
+  }
+  .form  form input{
+    width: 350px;
+  }
+  .form  form select{
+    width: 350px;
+  }
+  .ourmenu{
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width:2116px){
+.display{
+    display: none;
+
+}
+.special{
+    margin-top: 45%;
+}
+}
